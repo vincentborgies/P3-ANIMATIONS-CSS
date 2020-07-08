@@ -1,0 +1,18 @@
+h1
+{
+    color: blue;
+}
+@font-face {
+    font-family: 'MaSuperPolice';
+    src: url('MaSuperPolice.eot');
+}
+main
+{
+    object-position: center; text-emphasis-position: center;
+    padding-left:0;padding-right: 0;
+    ; background-image: url("dior.jpg.jpg"); background-size: cover ;background-attachment: fixed;
+}
+body
+{margin: 0em;padding: 0em;margin-top: 0em;margin-bottom: 0em;padding-top: 0em;padding-bottom: 0em;}
+img
+{size: 0em;}

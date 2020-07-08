@@ -1,54 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />        
-        <title>Page d'accueil</title>
+        <title>ohmyfood</title>
+        <link rel="stylesheet" href="sass\style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+        <link href="fontawesome/css/all.css" rel="stylesheet">
     </head>
     
     <body>
         <header>
             <a href="accueil.html">
-                <h1>ohmyfood</h1>
-            </a>
+                <h1 class="header__title">ohmyfood</h1>
+            </a> 
         </header>
 
-        <a href="la_note_enchantee.html">
-        <section class="note">
-            <h3>La note enchantée</h3>
-            <h2>MENU</h2>
-        </section>
-        </a>    
+        <div class="content">   
 
-        <a href="le_chic_a_la_francaise.html">
-        <section class="chic">
-            <h3>Le chic à la française</h3>
-            <h2>Menu</h2>
-        </section>
-        </a>
-        
-        <a href="le_delice_des_papilles.html">
-        <section class="delice">
-            <h3>Le délice des papilles</h3>
-            <h2>Menu</h2>
-        </section>
-        </a>
+            <div class="les-menus">
+                <section class="menu menu--note">
+                    <a href="la_note_enchantee.html">
+                        <div class="divnote">
+                            <i class="fas fa-music"></i>
+                            <h3 class="menu__restau menu__restau--note">La note enchantée</h3>
+                            <h2 class="menu__titre menu__titre--note">MENU</h2>
+                        </div>
+                    </a>    
+                </section>
 
-        <a href="La_palette_du_goût.html">
-        <section class="palette">
-            <h3>La palette du goût</h3>
-            <h2>Menu</h2>
-        </section>
-        </a>
+                <section class="menu menu--chic">
+                    <a href="le_chic_a_la_francaise.html">
+                        <div>
+                            <h3 class="menu__restau menu__restau--chic">Le chic à la française</h3>
+                            <h2 class="menu__ titre menu__titre--chic">Menu</h2>
+                        </div>    
+                    </a>
+                </section>
 
-        <div><a>Prochainement</a></div>
+                <section class="menu menu--delice">
+                    <a href="le_delice_des_papilles.html">
+                        <div>
+                            <h3 class="menu__restau menu__restau--delice">Le délice des papilles</h3>
+                            <h2 class="menu__restau menu__titre--delice">Menu</h2>
+                        </div>
+                    </a>
+                </section>
+                
+                <section class="menu menu--palette">
+                    <a href="La_palette_du_goût.html">
+                        <div>
+                            <h3 class="menu__restau menu__restau--palette">La palette du goût</h3>
+                            <h2 class="menu__titre menu__titre--palette">Menu</h2>
+                        </div>
+                    </a>
+                </section>
+                
+            </div>
 
-    <footer>
-        <a>Mentions légales</a>
-        <a>Contactez-nous</a>
-    </footer>
+            <button>Prochainement</button>
+            
+        </div>
+        <footer>
+            <div><a class="footer__mentions">Mentions légales</a></div>
+            <div><a class="footer__contact">Contactez-nous</a></div>
+        </footer>
 
-
-
-        
     </body>
 </html>
