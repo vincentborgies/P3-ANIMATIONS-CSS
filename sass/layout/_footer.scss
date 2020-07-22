@@ -1,0 +1,22 @@
+footer {
+    background: $vertdeau;
+    height:70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+        .footer__mentions{
+        color: $jaune;
+        text-align: center;
+        font-size: 1.2rem;
+        }
+        .footer__contact{
+            color: $jaune;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+}

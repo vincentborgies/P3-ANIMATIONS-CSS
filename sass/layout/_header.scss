@@ -1,0 +1,14 @@
+header {
+    background: $vertdeau;
+    height: 110px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+        .header__title{
+         margin: 0px;
+        color: $jaune;
+        font-size: 4rem;
+        letter-spacing: -4px;
+        padding-top: 15px;
+        }
+}

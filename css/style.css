@@ -1,0 +1,615 @@
+@font-face {
+  font-family: "Heart-Warming";
+  src: url("../../fonts/Heart-warming/Heart-Warming.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Sweety-Strawberry";
+  src: url("../../fonts/sweety-strawberry/Sweety-Strawberry.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Vinegar";
+  src: url("../../fonts/Vinegar/Vinegar-Regular.otf") format("opentype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background: #579C87;
+  height: 110px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header__title {
+  margin: 0px;
+  color: #FFC107;
+  font-size: 4rem;
+  letter-spacing: -4px;
+  padding-top: 15px;
+}
+
+footer {
+  background: #579C87;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer .footer__mentions {
+  color: #FFC107;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer .footer__contact {
+  color: #FFC107;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border-radius: 10px;
+  opacity: 1;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  height: 45px;
+  width: 265px;
+  margin: 30px 0px 50px 0px;
+  background: #579C87;
+  border: 0px none;
+  padding: 5px 20px 5px 20px;
+  color: #FFC107;
+  font-size: 1.3rem;
+}
+
+.content {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.les-menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 900px;
+  margin: auto;
+}
+
+html, body {
+  font-family: 'Archivo';
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  text-align: center;
+  height: 100%;
+}
+
+.menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 10px 3px #c2c0c0;
+          box-shadow: 0px 0px 10px 3px #c2c0c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 366px;
+  width: 264px;
+  margin: 20px;
+}
+
+.menu.menu--note {
+  background: #fcdfdb;
+}
+
+.menu.menu--note i {
+  font-size: 3em;
+}
+
+.menu.menu--note p:nth-of-type(1) {
+  font-family: "Devonshire";
+  font-size: 1.6em;
+  color: #3d1319;
+  margin-top: 0px;
+  margin: 0px;
+}
+
+.menu.menu--note p:nth-of-type(2) {
+  font-family: "Nanum Pen Script";
+  color: #3d1319;
+  font-size: 3em;
+}
+
+.menu.menu--chic {
+  background: #fff5fe;
+}
+
+.menu.menu--chic p:nth-of-type(1) {
+  font-family: "Croissant One";
+  background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  margin: 0px;
+  font-size: 1.2em;
+}
+
+.menu.menu--chic p:nth-of-type(2) {
+  color: #c77412;
+  font-family: "Vinegar";
+  font-size: 2em;
+}
+
+.menu.menu--delice {
+  background: #9e9e9e26;
+}
+
+.menu.menu--delice p:nth-of-type(1) {
+  background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Dancing Script";
+  margin: 0px;
+  font-size: 1.6em;
+}
+
+.menu.menu--delice p:nth-of-type(2) {
+  color: #0887fb;
+  font-family: "Nanum Pen Script";
+  font-size: 3em;
+}
+
+.menu.menu--palette {
+  background: #fdfffd;
+}
+
+.menu.menu--palette p:nth-of-type(1) {
+  background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Kaushan Script";
+  margin: 0px;
+  font-size: 1.6em;
+}
+
+.menu.menu--palette p:nth-of-type(2) {
+  background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Nanum Pen Script";
+  font-size: 3em;
+}
+
+.menu .fas {
+  background: -webkit-gradient(linear, left top, right top, from(#f15d61), to(#f6916a));
+  background: linear-gradient(to right, #f15d61, #f6916a);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menu .divnote {
+  padding-top: -3rem;
+}
+
+.carte--note {
+  color: #3d1319;
+  background: #fcdfdb;
+  padding-bottom: 20px;
+  padding: 50px 40px 50px 40px;
+  font-family: "Itim", cursive;
+}
+
+.carte--note .fas {
+  background: -webkit-gradient(linear, left top, right top, from(#f15d61), to(#f6916a));
+  background: linear-gradient(to right, #f15d61, #f6916a);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.carte--note h2 {
+  font-family: "Devonshire";
+  font-size: 3em;
+  margin-top: 0.2em;
+}
+
+.carte--note > i {
+  font-size: 5em;
+}
+
+.carte--note h3::before {
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  background: url(../Img/LineL-Note.svg) no-repeat center;
+}
+
+.carte--note h3::after {
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  background: url(../Img/LineR-Note.svg) no-repeat center;
+}
+
+.carte--note .titre-bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5em;
+}
+
+.carte--note .titre-bas > p {
+  font-family: "Devonshire";
+  font-weight: bold;
+}
+
+.carte--note .titre-bas > i {
+  font-size: 1em;
+  padding-top: 1em;
+  margin-right: 0.5em;
+}
+
+.carte--chic {
+  background: #fff5fe;
+  padding: 80px 40px 120px 40px;
+}
+
+.carte--chic > h2 {
+  font-family: "Croissant One";
+  background: linear-gradient(135deg, #e38a12 30%, #9056ff 65%);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1.8em;
+}
+
+.carte--chic .entree, .carte--chic .plat, .carte--chic .dessert {
+  margin: 0px 50px 0px 50px;
+}
+
+.carte--chic > .orange {
+  color: #e38a12;
+  margin-top: 30px;
+}
+
+.carte--chic > .orange h3::before {
+  background: url(../img/LineL-chic-entree.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+}
+
+.carte--chic > .orange h3::after {
+  background: url(../img/LineR-chic-entree.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+
+.carte--chic > .violet {
+  color: #a56899;
+}
+
+.carte--chic > .violet h3::before {
+  background: url(../img/LineL-chic-plat.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+}
+
+.carte--chic > .violet h3::after {
+  background: url(../img/LineR-chic-plat.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+
+.carte--chic > .bleu {
+  color: #6e4ccc;
+}
+
+.carte--chic > .bleu h3::before {
+  background: url(../img/LineL-chic-dessert.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+}
+
+.carte--chic > .bleu h3::after {
+  background: url(../img/LineR-chic-dessert.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+
+.carte--delice {
+  background: #9e9e9e26;
+  padding: 50px 40px 50px 40px;
+  font-family: "Nanum Pen Script";
+}
+
+.carte--delice > h2 {
+  background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Dancing Script";
+  font-size: 3.5rem;
+  margin: 50px 0 50px;
+}
+
+.carte--delice .entree, .carte--delice .plat, .carte--delice .dessert {
+  margin: 0px 50px 0px 50px;
+}
+
+.carte--delice h2 + h3 ::before {
+  background: url(../img/LineL-entree-del.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+}
+
+.carte--delice h2 + h3 ::after {
+  background: url(../img/LineR-entree-del.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+
+.carte--delice .entree + h3 ::before {
+  background: url(../img/LineL-plat-del.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+}
+
+.carte--delice .entree + h3 ::after {
+  background: url(../img/LineR-plat-del.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+
+.carte--delice .plat + h3 ::before {
+  background: url(../img/LineL-dessert-del.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+}
+
+.carte--delice .plat + h3 ::after {
+  background: url(../img/LineR-dessert-del.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+
+.carte--palette {
+  background: #fdfffd;
+  padding: 50px 40px 100px 40px;
+  font-family: "Nanum Pen Script";
+}
+
+.carte--palette > h2 {
+  background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-family: 'KaushanScript-Regular';
+  font-size: 3.5rem;
+  margin: 50px 0 50px;
+}
+
+.carte--palette .entree, .carte--palette .plat, .carte--palette .dessert {
+  margin: 0px 50px 0px 50px;
+}
+
+.carte--palette h3 ::before {
+  background: url(../img/LineL-palette.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+}
+
+.carte--palette h3 ::after {
+  background: url(../img/LineR-palette.svg) no-repeat center;
+  display: inline-block;
+  content: " ";
+  text-shadow: none;
+  background-size: 100%;
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .les-menus {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .les-menus {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.carte {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
+  max-width: 700px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 10px 3px #c2c0c0;
+          box-shadow: 0px 0px 10px 3px #c2c0c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1em;
+}
+
+.carte .dessert {
+  text-align: left;
+}
+
+.carte .platprix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carte h2 {
+  font-size: 3em;
+}
+
+.carte h3 {
+  display: block;
+  position: relative;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.mentions {
+  text-align: left;
+  margin: 50px;
+  margin-bottom: 150px;
+}
+/*# sourceMappingURL=style.css.map */

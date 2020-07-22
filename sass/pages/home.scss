@@ -1,0 +1,122 @@
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border-radius: 10px;
+    opacity: 1;
+    transition: opacity 0.6s;
+    height: 45px;
+    width: 265px;
+    margin: 30px 0px 50px 0px;
+    background: $vertdeau;
+    border: 0px none;
+    padding: 5px 20px 5px 20px;
+    color: $jaune;
+    font-size: 1.3rem;
+}
+
+.content{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.les-menus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    width: 900px;
+    margin:auto
+}
+
+html,body {
+    font-family: 'Archivo';
+    padding:0px;
+    margin: 0px;
+    font-size: 16px;
+    text-align: center;
+    height: 100%
+  }
+
+.menu{
+    @include carte;
+    height: 366px;
+    width: 264px;
+    margin: 20px;
+        &.menu--note{
+            background: $note;
+                i{
+                    font-size: 3em;
+                }
+                p:nth-of-type(1){
+                    font-family: "Devonshire"; 
+                    font-size: 1.6em;
+                    color: #3d1319;
+                    margin-top: 0px;
+                    margin: 0px;
+                }
+                p:nth-of-type(2) {
+                    font-family: "Nanum Pen Script";
+                    color: #3d1319;
+                    font-size: 3em;
+                }
+        }
+        &.menu--chic{
+            background: $chic;
+                p:nth-of-type(1){
+                    font-family: "Croissant One";
+                    background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    margin: 0px;
+                    font-size: 1.2em;
+                }
+                p:nth-of-type(2) {color: #c77412;
+                    font-family: "Vinegar";
+                    font-size: 2em;
+                }
+        }
+        &.menu--delice{
+            background: $delice;
+                p:nth-of-type(1){
+                    background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    font-family: "Dancing Script";
+                    margin: 0px;
+                    font-size: 1.6em;
+                }
+                p:nth-of-type(2){
+                    color: #0887fb;
+                    font-family: "Nanum Pen Script";
+                    font-size: 3em;
+                }
+        }        
+        &.menu--palette{
+            background: $palette;
+                p:nth-of-type(1){
+                    background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    font-family: "Kaushan Script";
+                    margin: 0px;
+                    font-size: 1.6em;
+                }
+                p:nth-of-type(2){ 
+                    background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    font-family: "Nanum Pen Script";
+                    font-size: 3em;
+                }
+        }
+        .fas{
+            @include note;
+        }
+        .divnote{
+            padding-top: -3rem;
+        }
+}
