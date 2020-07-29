@@ -1,0 +1,97 @@
+@mixin note {
+            background: linear-gradient(to right, #f15d61, #f6916a);
+            color: transparent;
+            -webkit-background-clip: text;
+}
+
+@mixin carte {
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0rem 0rem 0.625rem 0.19rem #c2c0c0;   
+    display: flex;
+}
+
+@mixin deco{
+    display: inline-block;
+    content: " ";
+    text-shadow: none;
+    background-size: 100%;
+    width: 30%;
+    height: 1.88rem;
+    position: absolute;
+}
+
+@mixin decoR{
+    right: 0;
+}
+
+@mixin decoL {
+    left: 0;
+}
+
+@mixin marginepd {
+    margin: 0rem 3.1rem 0rem 3.1rem;
+}
+
+@mixin scale {
+    transform: scale(1);
+    transition-property: transform;
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+@mixin shake {
+    -webkit-animation: shake 60ms ease-in-out;
+    animation: shake 60ms ease-in-out;
+    -webkit-animation-iteration-count: 20;
+    animation-iteration-count: 20;
+}
+
+@mixin Under($color: $textnote){
+    display: inline-block;
+    padding-bottom: 3px;
+    background: linear-gradient(to top, $color 0%, $color 2px, transparent 1px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.6s ease-in-out;
+    &:hover {
+        background-size: 100% 100%;
+    }
+}
+
+@mixin Dots {
+    width: 0.375rem;
+    height: 0.375rem;
+    margin: 0rem 0.125rem 0.25rem 0.5rem;
+    border-radius: 50%;
+    background-color: $jaune;
+    display: inline-block;
+    -webkit-animation-name: dots;
+    animation-name: dots;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    &:nth-child(2) {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+    &:nth-child(3) {
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+    }
+}
+
+@mixin tablette {
+    @media screen and (max-width:999px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:500px){
+        @content;
+    }
+}

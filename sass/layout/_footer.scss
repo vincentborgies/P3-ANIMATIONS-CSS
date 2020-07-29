@@ -1,6 +1,6 @@
 footer {
     background: $vertdeau;
-    height:70px;
+    height:4.4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,13 +10,19 @@ footer {
     left: 0;
     width: 100%;
         .footer__mentions{
-        color: $jaune;
-        text-align: center;
-        font-size: 1.2rem;
+            color: $jaune;
+            text-align: center;
+            font-size: 1.2rem; 
+            &:hover{
+                @include shake;
+            }
         }
         .footer__contact{
             color: $jaune;
             text-align: center;
             font-size: 1.2rem;
+            &:hover{
+                @include shake;
+            }
         }
 }

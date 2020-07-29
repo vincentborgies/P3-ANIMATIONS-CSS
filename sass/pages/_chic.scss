@@ -1,0 +1,58 @@
+.carte--chic{
+    background: $chic;
+    padding: 5.5rem 2.5rem 7.5rem 2.5rem;
+    font-family: "PT SERIF", serif;
+    >h2{
+        font-family: "Croissant One";
+        background: linear-gradient(135deg, #e38a12 30%, #9056ff 65%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    .entree, .plat, .dessert{
+        @include marginepd
+    }
+    >.orange{
+    color: $orange;
+    margin-top: 1.88rem;
+        .chic-gauche1{
+            background: url("../img/LineL-chic-entree.svg") $nrc;
+            @include decoL;
+        }
+        .chic-droit1{
+            background: url("../img/LineR-chic-entree.svg") $nrc;
+            @include decoR;
+        }
+        h3{
+            @include Under($orange)
+        }
+    }
+    >.violet{
+    color:$purple;
+        .chic-gauche2{
+            background: url("../img/LineL-chic-plat.svg") $nrc;
+            @include decoL;
+        }
+        .chic-droit2{
+            background: url("../img/LineR-chic-plat.svg") $nrc;
+            @include decoR;
+        }
+        h3{
+            @include Under($purple)
+        }
+    }
+    >.bleu{
+    color: $blue;
+        .chic-gauche3{
+            background: url("../img/LineL-chic-dessert.svg") $nrc;
+            @include decoL;
+        }
+        .chic-droit3{
+            background: url("../img/LineR-chic-dessert.svg") $nrc;
+            @include decoR;
+        }
+        h3{
+            @include Under($blue)
+        }
+    }
+}

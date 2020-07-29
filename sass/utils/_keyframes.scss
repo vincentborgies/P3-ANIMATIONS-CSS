@@ -1,0 +1,36 @@
+@-webkit-keyframes shake {
+    0% {
+        transform: translateX(5%);
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: translateX(-5%);
+        transform: rotate(-3deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(5%);
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: translateX(-5%);
+        transform: rotate(-5deg);
+    }
+}
+
+
+@-webkit-keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.8) translateY(8px);
+    }
+}
+
+@keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.8) translateY(8px);
+    }
+}

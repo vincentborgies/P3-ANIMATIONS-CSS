@@ -1,0 +1,45 @@
+.carte--delice{
+    background: $delice;
+    padding: 3.1rem 2.5rem 3.1rem 2.5rem;
+    font-family: "Nanum Pen Script";
+    >h2{
+        background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-family: "Dancing Script";
+        margin: 3.1rem 0rem 3.1rem;
+    }
+    h3{
+        @include Under(black)
+    }
+    .plat, .dessert{
+        @include marginepd
+    }
+    .delice-gauche1{
+        background: url("../img/LineL-entree-del.svg") $nrc;
+        @include decoL
+    }        
+    .delice-droit1{
+        background: url("../img/LineR-entree-del.svg") $nrc;
+        @include decoR
+    }
+    .delice-gauche2{
+        background: url("../img/LineL-plat-del.svg") $nrc;
+        @include decoL
+    }        
+    .delice-droit2{
+        background: url("../img/LineR-plat-del.svg") $nrc;
+        @include decoR
+    }
+    .delice-gauche3{
+        background: url("../img/LineL-dessert-del.svg") $nrc;
+        @include decoL
+    }        
+    .delice-droit3{
+        background: url("../img/LineR-dessert-del.svg") $nrc;
+        @include decoR
+
+    }
+
+}

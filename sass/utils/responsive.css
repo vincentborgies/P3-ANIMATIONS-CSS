@@ -1,9 +1,0 @@
-@media only screen and (max-width: 1000px) {
-  .les-menus {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-/*# sourceMappingURL=responsive.css.map */
