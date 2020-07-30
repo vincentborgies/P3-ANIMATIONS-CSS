@@ -73,9 +73,9 @@
     }
 }
 
-// RESPONSIVE pour les desktops
+// RESPONSIVE MOBILE
 @mixin mobile {
-    @media screen and (max-width: map-get($breakpoints, mobile)){
+    @media screen and (max-width: 500px){
         @content;
     }
   }
