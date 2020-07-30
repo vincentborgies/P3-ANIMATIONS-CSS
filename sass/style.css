@@ -63,10 +63,8 @@ footer .footer__mentions {
 }
 
 footer .footer__mentions:hover {
-  -webkit-animation: shake 60ms ease-in-out;
-  animation: shake 60ms ease-in-out;
-  -webkit-animation-iteration-count: 20;
-  animation-iteration-count: 20;
+  -webkit-animation: shake 500ms infinite;
+          animation: shake 500ms infinite;
 }
 
 footer .footer__contact {
@@ -76,10 +74,8 @@ footer .footer__contact {
 }
 
 footer .footer__contact:hover {
-  -webkit-animation: shake 60ms ease-in-out;
-  animation: shake 60ms ease-in-out;
-  -webkit-animation-iteration-count: 20;
-  animation-iteration-count: 20;
+  -webkit-animation: shake 500ms infinite;
+          animation: shake 500ms infinite;
 }
 
 a {
@@ -118,24 +114,18 @@ button p span {
   border-radius: 50%;
   background-color: #FFC107;
   display: inline-block;
-  -webkit-animation-name: dots;
-  animation-name: dots;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation: dots 2s infinite ease-in-out;
+          animation: dots 2s infinite ease-in-out;
 }
 
 button p span:nth-child(2) {
   -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 button p span:nth-child(3) {
   -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .content {
@@ -159,9 +149,8 @@ button p span:nth-child(3) {
   width: 56.25rem;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 500px) {
   .les-menus {
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -177,18 +166,6 @@ html, body {
   height: 100%;
 }
 
-@media screen and (max-width: 999px) {
-  html, body {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  html, body {
-    font-size: 40px;
-  }
-}
-
 .menu {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -202,20 +179,29 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 22.88rem;
-  width: 16.5rem;
+  height: 30rem;
+  width: 21.5rem;
   margin: 1.25rem;
 }
 
-.menu a {
+.menu .zoom {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.menu a:hover {
+.menu .zoom:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
   opacity: 0.5;
+}
+
+.menu .zoom p:nth-of-type(1) {
+  margin: 0;
+}
+
+.menu .zoom p:nth-of-type(2) {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
 }
 
 .menu--note {
@@ -227,9 +213,10 @@ html, body {
   background: linear-gradient(to right, #f15d61, #f6916a);
   color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
-.menu--note .divnote {
+.menu--note .note {
   padding-top: -3rem;
 }
 
@@ -241,8 +228,6 @@ html, body {
   font-family: "Devonshire";
   font-size: 1.6rem;
   color: #3d1319;
-  margin-top: 0px;
-  margin: 0px;
 }
 
 .menu--note p:nth-of-type(2) {
@@ -261,7 +246,6 @@ html, body {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  margin: 0px;
   font-size: 1.2rem;
 }
 
@@ -281,7 +265,6 @@ html, body {
   -webkit-background-clip: text;
   background-clip: text;
   font-family: "Dancing Script";
-  margin: 0px;
   font-size: 1.6rem;
 }
 
@@ -301,7 +284,6 @@ html, body {
   -webkit-background-clip: text;
   background-clip: text;
   font-family: "Kaushan Script";
-  margin: 0px;
   font-size: 1.6rem;
 }
 
@@ -327,6 +309,7 @@ html, body {
   background: linear-gradient(to right, #f15d61, #f6916a);
   color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .carte--note h2 {
@@ -485,7 +468,8 @@ html, body {
 .carte--delice {
   background: #9e9e9e26;
   padding: 3.1rem 2.5rem 3.1rem 2.5rem;
-  font-family: "Nanum Pen Script";
+  font-family: "Caveat";
+  font-weight: bold;
 }
 
 .carte--delice > h2 {
@@ -547,7 +531,8 @@ html, body {
 .carte--palette {
   background: #fdfffd;
   padding: 3.1rem 2.5rem 6.25rem 2.5rem;
-  font-family: "Nanum Pen Script";
+  font-family: "Caveat";
+  font-weight: bold;
 }
 
 .carte--palette > h2 {
@@ -625,6 +610,15 @@ html, body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 500px) {
+  .carte .platprix {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .carte h2 {
   font-size: 3rem;
 }
@@ -665,31 +659,95 @@ html, body {
 
 @-webkit-keyframes shake {
   0% {
-    -webkit-transform: translateX(5%);
-            transform: translateX(5%);
-    -webkit-transform: rotate(3deg);
-            transform: rotate(3deg);
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 
 @keyframes shake {
   0% {
-    -webkit-transform: translateX(5%);
-            transform: translateX(5%);
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 

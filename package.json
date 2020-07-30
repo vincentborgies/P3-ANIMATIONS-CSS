@@ -1,0 +1,22 @@
+{
+    "name": "oc-p3-ohmyfood",
+    "version": "1.0.0",
+    "description": "OhMyFood",
+    "main": "index.js",
+    "scripts": {
+      "sass": "sass --watch ./sass/main.scss:./css/style.css",
+      "sassProd": "sass ./sass/main.scss:./css/style.css --style compressed",
+      "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/RomainSire/OC-P3-OhMyFood.git"
+    },
+    "author": "Vincent Borgies",
+    "license": "ISC",
+    "browserslist": "last 4 versions",
+    "bugs": {
+      "url": "https://github.com/vincentborgies/projet3"
+    },
+    "homepage": "https://github.com/RomainSire/OC-P3-OhMyFood#readme"
+  }

@@ -15,6 +15,9 @@ max-width: 43.75rem;
         display: flex;
         justify-content: center;
         justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+        }
     }
     h2{
         font-size: 3rem;

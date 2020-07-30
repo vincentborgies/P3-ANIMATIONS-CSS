@@ -2,6 +2,7 @@
             background: linear-gradient(to right, #f15d61, #f6916a);
             color: transparent;
             -webkit-background-clip: text;
+            background-clip: text;
 }
 
 @mixin carte {
@@ -42,10 +43,7 @@
 }
 
 @mixin shake {
-    -webkit-animation: shake 60ms ease-in-out;
-    animation: shake 60ms ease-in-out;
-    -webkit-animation-iteration-count: 20;
-    animation-iteration-count: 20;
+    animation: shake 500ms infinite
 }
 
 @mixin Under($color: $textnote){
@@ -66,32 +64,18 @@
     border-radius: 50%;
     background-color: $jaune;
     display: inline-block;
-    -webkit-animation-name: dots;
-    animation-name: dots;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
+    animation: dots 2s infinite ease-in-out;
     &:nth-child(2) {
-        -webkit-animation-delay: 0.4s;
         animation-delay: 0.4s;
     }
     &:nth-child(3) {
-        -webkit-animation-delay: 0.8s;
         animation-delay: 0.8s;
     }
 }
 
-@mixin tablette {
-    @media screen and (max-width:999px){
-        @content;
-    }
-}
-
+// RESPONSIVE pour les desktops
 @mixin mobile {
-    @media screen and (max-width:500px){
+    @media screen and (max-width: map-get($breakpoints, mobile)){
         @content;
     }
-}
+  }
