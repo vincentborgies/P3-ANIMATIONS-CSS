@@ -2,34 +2,25 @@
   font-family: "Heart-Warming";
   src: url("../../fonts/Heart-warming/Heart-Warming.otf") format("opentype");
 }
-
 @font-face {
   font-family: "Sweety-Strawberry";
   src: url("../../fonts/sweety-strawberry/Sweety-Strawberry.ttf") format("ttf");
 }
-
 @font-face {
   font-family: "Vinegar";
   src: url("../../fonts/Vinegar/Vinegar-Regular.otf") format("opentype");
 }
-
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
   background: #579C87;
   height: 6.9rem;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 header .header__title {
   margin: 0px;
   color: #FFC107;
@@ -41,41 +32,30 @@ header .header__title {
 footer {
   background: #579C87;
   height: 4.4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
   width: 100%;
 }
-
 footer .footer__mentions {
   color: #FFC107;
   text-align: center;
   font-size: 1.2rem;
 }
-
 footer .footer__mentions:hover {
-  -webkit-animation: shake 500ms infinite;
-          animation: shake 500ms infinite;
+  animation: shake 500ms infinite;
 }
-
 footer .footer__contact {
   color: #FFC107;
   text-align: center;
   font-size: 1.2rem;
 }
-
 footer .footer__contact:hover {
-  -webkit-animation: shake 500ms infinite;
-          animation: shake 500ms infinite;
+  animation: shake 500ms infinite;
 }
 
 a {
@@ -85,7 +65,6 @@ a {
 button {
   border-radius: 10px;
   opacity: 1;
-  -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
   height: 2.8rem;
   width: 16.6rem;
@@ -96,11 +75,9 @@ button {
   color: #FFC107;
   font-size: 1.3rem;
 }
-
 button p {
   margin: 0.25rem 0px 0px 0px;
 }
-
 button p span {
   width: 0.38rem;
   height: 0.38rem;
@@ -114,18 +91,13 @@ button p span {
   border-radius: 50%;
   background-color: #FFC107;
   display: inline-block;
-  -webkit-animation: dots 2s infinite ease-in-out;
-          animation: dots 2s infinite ease-in-out;
+  animation: dots 2s infinite ease-in-out;
 }
-
 button p span:nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
-
 button p span:nth-child(3) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .content {
@@ -134,71 +106,52 @@ button p span:nth-child(3) {
 }
 
 .les-menus {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin: auto;
   width: 56.25rem;
 }
-
 @media screen and (max-width: 500px) {
   .les-menus {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
+    width: 100%;
   }
 }
 
 html, body {
-  font-family: 'Archivo';
+  font-family: "Archivo";
   padding: 0;
   margin: 0;
   text-align: center;
   height: 100%;
 }
+@media screen and (max-width: 500px) {
+  html, body {
+    font-size: 35px;
+  }
+}
 
 .menu {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0rem 0rem 0.625rem 0.19rem #c2c0c0;
-          box-shadow: 0rem 0rem 0.625rem 0.19rem #c2c0c0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0rem 0rem 0.625rem 0.19rem #c2c0c0;
   display: flex;
   height: 30rem;
   width: 21.5rem;
   margin: 1.25rem;
 }
-
 .menu .zoom {
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .menu .zoom:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  transform: scale(1.25);
   opacity: 0.5;
 }
-
 .menu .zoom p:nth-of-type(1) {
   margin: 0;
 }
-
 .menu .zoom p:nth-of-type(2) {
   margin-top: 1.25rem;
   margin-bottom: 0;
@@ -207,29 +160,23 @@ html, body {
 .menu--note {
   background: #fcdfdb;
 }
-
 .menu--note .fas {
-  background: -webkit-gradient(linear, left top, right top, from(#f15d61), to(#f6916a));
   background: linear-gradient(to right, #f15d61, #f6916a);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
-
 .menu--note .note {
   padding-top: -3rem;
 }
-
 .menu--note i {
   font-size: 3rem;
 }
-
 .menu--note p:nth-of-type(1) {
   font-family: "Devonshire";
   font-size: 1.6rem;
   color: #3d1319;
 }
-
 .menu--note p:nth-of-type(2) {
   font-family: "Nanum Pen Script";
   color: #3d1319;
@@ -239,7 +186,6 @@ html, body {
 .menu--chic {
   background: #fff5fe;
 }
-
 .menu--chic p:nth-of-type(1) {
   font-family: "Croissant One";
   background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
@@ -248,7 +194,6 @@ html, body {
   background-clip: text;
   font-size: 1.2rem;
 }
-
 .menu--chic p:nth-of-type(2) {
   color: #c77412;
   font-family: "Vinegar";
@@ -258,7 +203,6 @@ html, body {
 .menu--delice {
   background: #9e9e9e26;
 }
-
 .menu--delice p:nth-of-type(1) {
   background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
   color: transparent;
@@ -267,7 +211,6 @@ html, body {
   font-family: "Dancing Script";
   font-size: 1.6rem;
 }
-
 .menu--delice p:nth-of-type(2) {
   color: #0887fb;
   font-family: "Nanum Pen Script";
@@ -277,7 +220,6 @@ html, body {
 .menu--palette {
   background: #fdfffd;
 }
-
 .menu--palette p:nth-of-type(1) {
   background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
   color: transparent;
@@ -286,7 +228,6 @@ html, body {
   font-family: "Kaushan Script";
   font-size: 1.6rem;
 }
-
 .menu--palette p:nth-of-type(2) {
   background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
   color: transparent;
@@ -303,64 +244,48 @@ html, body {
   padding: 3.1rem 2.5rem 3.1rem 2.5rem;
   font-family: "Itim", cursive;
 }
-
 .carte--note .fas {
-  background: -webkit-gradient(linear, left top, right top, from(#f15d61), to(#f6916a));
   background: linear-gradient(to right, #f15d61, #f6916a);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
-
 .carte--note h2 {
   font-family: "Devonshire";
   margin-top: 0px;
 }
-
 .carte--note h3 {
   display: inline-block;
   padding-bottom: 3px;
   background: linear-gradient(to top, #3d1319 0%, #3d1319 2px, transparent 1px) no-repeat;
   background-size: 0 100%;
-  -webkit-transition: background-size 0.6s ease-in-out;
   transition: background-size 0.6s ease-in-out;
 }
-
 .carte--note h3:hover {
   background-size: 100% 100%;
 }
-
 .carte--note > i {
   font-size: 5rem;
 }
-
 .carte--note .note-gauche {
   background: url("../img/LineL-Note.svg") no-repeat center;
   left: 0;
 }
-
 .carte--note .note-droit {
   background: url("../img/LineR-Note.svg") no-repeat center;
   right: 0;
 }
-
 .carte--note .titre-bas {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-size: 2.5rem;
 }
-
 .carte--note .titre-bas > p {
   font-family: "Devonshire";
   font-weight: bold;
-}
-
-.carte--note .titre-bas > i {
   font-size: 2.5rem;
+}
+.carte--note .titre-bas > i {
   padding-top: 2.8rem;
   margin-right: 1rem;
 }
@@ -370,7 +295,6 @@ html, body {
   padding: 5.5rem 2.5rem 7.5rem 2.5rem;
   font-family: "PT SERIF", serif;
 }
-
 .carte--chic > h2 {
   font-family: "Croissant One";
   background: linear-gradient(135deg, #e38a12 30%, #9056ff 65%);
@@ -378,89 +302,76 @@ html, body {
   -webkit-background-clip: text;
   background-clip: text;
 }
-
+.carte--chic h3 {
+  font-size: 1.2rem;
+}
+.carte--chic p {
+  font-size: 1rem;
+}
 .carte--chic .entree, .carte--chic .plat, .carte--chic .dessert {
   margin: 0rem 3.1rem 0rem 3.1rem;
 }
-
 .carte--chic > .orange {
   color: #e38a12;
   margin-top: 1.88rem;
 }
-
 .carte--chic > .orange .chic-gauche1 {
   background: url("../img/LineL-chic-entree.svg") no-repeat center;
   left: 0;
 }
-
 .carte--chic > .orange .chic-droit1 {
   background: url("../img/LineR-chic-entree.svg") no-repeat center;
   right: 0;
 }
-
 .carte--chic > .orange h3 {
   display: inline-block;
   padding-bottom: 3px;
   background: linear-gradient(to top, #e38a12 0%, #e38a12 2px, transparent 1px) no-repeat;
   background-size: 0 100%;
-  -webkit-transition: background-size 0.6s ease-in-out;
   transition: background-size 0.6s ease-in-out;
 }
-
 .carte--chic > .orange h3:hover {
   background-size: 100% 100%;
 }
-
 .carte--chic > .violet {
   color: #a56899;
 }
-
 .carte--chic > .violet .chic-gauche2 {
   background: url("../img/LineL-chic-plat.svg") no-repeat center;
   left: 0;
 }
-
 .carte--chic > .violet .chic-droit2 {
   background: url("../img/LineR-chic-plat.svg") no-repeat center;
   right: 0;
 }
-
 .carte--chic > .violet h3 {
   display: inline-block;
   padding-bottom: 3px;
   background: linear-gradient(to top, #a56899 0%, #a56899 2px, transparent 1px) no-repeat;
   background-size: 0 100%;
-  -webkit-transition: background-size 0.6s ease-in-out;
   transition: background-size 0.6s ease-in-out;
 }
-
 .carte--chic > .violet h3:hover {
   background-size: 100% 100%;
 }
-
 .carte--chic > .bleu {
   color: #6e4ccc;
 }
-
 .carte--chic > .bleu .chic-gauche3 {
   background: url("../img/LineL-chic-dessert.svg") no-repeat center;
   left: 0;
 }
-
 .carte--chic > .bleu .chic-droit3 {
   background: url("../img/LineR-chic-dessert.svg") no-repeat center;
   right: 0;
 }
-
 .carte--chic > .bleu h3 {
   display: inline-block;
   padding-bottom: 3px;
   background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 2px, transparent 1px) no-repeat;
   background-size: 0 100%;
-  -webkit-transition: background-size 0.6s ease-in-out;
   transition: background-size 0.6s ease-in-out;
 }
-
 .carte--chic > .bleu h3:hover {
   background-size: 100% 100%;
 }
@@ -471,7 +382,6 @@ html, body {
   font-family: "Caveat";
   font-weight: bold;
 }
-
 .carte--delice > h2 {
   background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
   color: transparent;
@@ -480,49 +390,39 @@ html, body {
   font-family: "Dancing Script";
   margin: 3.1rem 0rem 3.1rem;
 }
-
 .carte--delice h3 {
   display: inline-block;
   padding-bottom: 3px;
   background: linear-gradient(to top, black 0%, black 2px, transparent 1px) no-repeat;
   background-size: 0 100%;
-  -webkit-transition: background-size 0.6s ease-in-out;
   transition: background-size 0.6s ease-in-out;
 }
-
 .carte--delice h3:hover {
   background-size: 100% 100%;
 }
-
 .carte--delice .plat, .carte--delice .dessert {
   margin: 0rem 3.1rem 0rem 3.1rem;
 }
-
 .carte--delice .delice-gauche1 {
   background: url("../img/LineL-entree-del.svg") no-repeat center;
   left: 0;
 }
-
 .carte--delice .delice-droit1 {
   background: url("../img/LineR-entree-del.svg") no-repeat center;
   right: 0;
 }
-
 .carte--delice .delice-gauche2 {
   background: url("../img/LineL-plat-del.svg") no-repeat center;
   left: 0;
 }
-
 .carte--delice .delice-droit2 {
   background: url("../img/LineR-plat-del.svg") no-repeat center;
   right: 0;
 }
-
 .carte--delice .delice-gauche3 {
   background: url("../img/LineL-dessert-del.svg") no-repeat center;
   left: 0;
 }
-
 .carte--delice .delice-droit3 {
   background: url("../img/LineR-dessert-del.svg") no-repeat center;
   right: 0;
@@ -534,7 +434,6 @@ html, body {
   font-family: "Caveat";
   font-weight: bold;
 }
-
 .carte--palette > h2 {
   background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
   color: transparent;
@@ -543,29 +442,23 @@ html, body {
   font-family: "Kaushan Script";
   margin: 3.1rem 0rem 3.1rem;
 }
-
 .carte--palette h3 {
   display: inline-block;
   padding-bottom: 3px;
   background: linear-gradient(to top, black 0%, black 2px, transparent 1px) no-repeat;
   background-size: 0 100%;
-  -webkit-transition: background-size 0.6s ease-in-out;
   transition: background-size 0.6s ease-in-out;
 }
-
 .carte--palette h3:hover {
   background-size: 100% 100%;
 }
-
 .carte--palette .entree, .carte--palette .plat, .carte--palette .dessert {
   margin: 0rem 3.1rem 0rem 3.1rem;
 }
-
 .carte--palette .palette-gauche {
   background: url("../img/LineL-palette.svg") no-repeat center;
   left: 0;
 }
-
 .carte--palette .palette-droit {
   background: url("../img/LineR-palette.svg") no-repeat center;
   right: 0;
@@ -580,62 +473,45 @@ html, body {
   margin: auto;
   margin-bottom: 6.25rem;
   max-width: 43.75rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0rem 0rem 0.625rem 0.19rem #c2c0c0;
-          box-shadow: 0rem 0rem 0.625rem 0.19rem #c2c0c0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0rem 0rem 0.625rem 0.19rem #c2c0c0;
   display: flex;
 }
-
+@media screen and (max-width: 500px) {
+  .carte {
+    margin: 0 1.5rem 8rem;
+  }
+}
 .carte .dessert {
   text-align: left;
 }
-
 .carte .platprix {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  justify-content: space-between;
 }
-
 @media screen and (max-width: 500px) {
   .carte .platprix {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
+.carte p {
+  font-size: 1.2rem;
+}
 .carte h2 {
   font-size: 3rem;
 }
-
 .carte .soustitre-menu {
   display: block;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   line-height: 1.88rem;
   text-align: center;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 .carte .soustitre-menu .tiret {
   display: inline-block;
   content: " ";
@@ -645,9 +521,13 @@ html, body {
   height: 1.88rem;
   position: absolute;
 }
-
+@media screen and (max-width: 500px) {
+  .carte .soustitre-menu .tiret {
+    width: 15%;
+  }
+}
 .carte h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0px;
 }
 
@@ -657,113 +537,46 @@ html, body {
   margin-bottom: 150px;
 }
 
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
 @keyframes shake {
   0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
   }
   10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
   }
   20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
   }
   30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
   }
   40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
   }
   60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
   }
   70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
   }
   80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
   }
   90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-
-@-webkit-keyframes dots {
-  50% {
-    opacity: 0;
-    -webkit-transform: scale(0.8) translateY(8px);
-            transform: scale(0.8) translateY(8px);
-  }
-}
-
 @keyframes dots {
   50% {
     opacity: 0;
-    -webkit-transform: scale(0.8) translateY(8px);
-            transform: scale(0.8) translateY(8px);
+    transform: scale(0.8) translateY(8px);
   }
 }
+
 /*# sourceMappingURL=style.css.map */

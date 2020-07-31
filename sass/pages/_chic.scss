@@ -9,6 +9,12 @@
         -webkit-background-clip: text;
         background-clip: text;
     }
+    h3{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
     .entree, .plat, .dessert{
         @include marginepd
     }
