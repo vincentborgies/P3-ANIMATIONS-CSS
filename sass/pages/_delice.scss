@@ -12,7 +12,11 @@
         margin: 3.1rem 0rem 3.1rem;
     }
     h3{
-        @include Under(black)
+        @include Under(black);
+        @include fontsize-card-h3
+    }
+    p{
+        @include fontsize-card-p
     }
     .plat, .dessert{
         @include marginepd

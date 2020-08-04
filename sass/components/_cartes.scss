@@ -3,16 +3,22 @@
 }
 
 .carte{
-text-align: center;
-margin: auto;
-margin-bottom: 6.25rem;
-max-width: 43.75rem;
-@include carte;
-@include mobile {
-    margin: 0 1.5rem 8rem;
-}
+    text-align: center;
+    margin: auto;
+    margin-bottom: 6.25rem;
+    max-width: 43.75rem;
+    @include carte;
+    @include mobile {
+        margin: 0 1.5rem 8rem;
+    }
     .dessert{
         text-align: left;
+        @include mobile{
+            text-align: center;
+        }
+    }
+    .plat{
+        margin-bottom: 30px;
     }
     .platprix{
         display: flex;
@@ -21,9 +27,6 @@ max-width: 43.75rem;
         @include mobile{
             flex-direction: column;
         }
-    }
-    p{
-        font-size: 1.2rem;
     }
     h2{
         font-size: 3rem;
@@ -44,10 +47,5 @@ max-width: 43.75rem;
             }
         }
     }
-    h3{
-        font-size: 1.5rem;
-        margin: 0px;
-    }
-   
-    
+
 }

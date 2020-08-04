@@ -11,12 +11,12 @@ button {
     width: 16.6rem;
     margin: 1.9rem 0rem 3.1rem 0rem;
     background: $vertdeau;
-    border: 0px none;
+    border: 0 none;
     padding: 0.31rem 1.25rem 0.31rem 1.25rem;
     color: $jaune;
     font-size: 1.3rem;
     p{
-        margin: 0.25rem 0px 0px 0px;
+        margin: 0.25rem 0 0 0;
         span{
             width: 0.38rem;
             height: 0.38rem;
@@ -52,9 +52,6 @@ html,body{
     margin: 0;
     text-align: center;
     height: 100%;
-    @include mobile{
-        font-size: 35px;
-    }
 }
 
 .menu{

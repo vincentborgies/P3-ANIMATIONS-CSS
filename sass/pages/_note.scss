@@ -12,7 +12,12 @@ font-family: "Itim", cursive;
     margin-top: 0px;
     }
     h3{
-        @include Under;
+        @include Under($textnote);
+        margin: 0;
+        @include fontsize-card-h3;
+    }
+    .platprix p, .dessert p{
+        @include fontsize-card-p
     }
     >i{
     font-size: 5rem;
