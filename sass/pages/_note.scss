@@ -14,10 +14,10 @@ font-family: "Itim", cursive;
     h3{
         @include Under($textnote);
         margin: 0;
-        @include fontsize-card-h3;
+        font-size: 1.4rem;
     }
     .platprix p, .dessert p{
-        @include fontsize-card-p
+        font-size: 1.2rem;
     }
     >i{
     font-size: 5rem;

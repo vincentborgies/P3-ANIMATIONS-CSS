@@ -13,7 +13,7 @@
     }
     h3{
         @include Under(black);
-        @include fontsize-card-h3
+        @include fontsize-card-h3;
     }
     p{
         @include fontsize-card-p
