@@ -46,26 +46,32 @@ a {
   text-decoration: none;
 }
 
-button {
+.button {
   border-radius: 10px;
   opacity: 1;
   transition: opacity 0.6s;
   height: 2.8rem;
   width: 16.6rem;
-  margin: 1.9rem 0rem 3.1rem 0rem;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 120px;
   background: #579c87;
   border: 0 none;
-  padding: 0.31rem 1.25rem 0.31rem 1.25rem;
+  padding: 0.31rem 0.31rem;
   color: #ffc107;
   font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-button p {
-  margin: 0.25rem 0 0 0;
+.button p {
+  margin: 0;
+  margin-right: 5px;
 }
-button p span {
+.button span {
   width: 0.38rem;
   height: 0.38rem;
-  margin: 0 0.125rem 0.25rem 0.2rem;
+  margin: 0;
   border-radius: 50%;
   background-color: #fdcb46;
   display: inline-block;
@@ -77,10 +83,10 @@ button p span {
   display: inline-block;
   animation: dots 2s infinite ease-in-out;
 }
-button p span:nth-child(2) {
+.button span:nth-child(2) {
   animation-delay: 0.4s;
 }
-button p span:nth-child(3) {
+.button span:nth-child(3) {
   animation-delay: 0.8s;
 }
 
@@ -145,12 +151,13 @@ body {
   transform: scale(1.25);
   opacity: 0.5;
 }
-.menu .zoom p:nth-of-type(1) {
+.menu .zoom p {
   margin: 0;
 }
-.menu .zoom p:nth-of-type(2) {
+.menu .zoom h3 {
   margin-top: 1.25rem;
   margin-bottom: 0;
+  font-weight: 400;
 }
 
 .menu--note {
@@ -160,10 +167,6 @@ body {
   background: linear-gradient(to right, #f15d61, #f6916a);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
-}
-.menu--note .note {
-  padding-top: -3rem;
 }
 .menu--note i {
   font-size: 3rem;
@@ -173,7 +176,7 @@ body {
   font-size: 1.6rem;
   color: #3d1319;
 }
-.menu--note p:nth-of-type(2) {
+.menu--note h3 {
   font-family: "Nanum Pen Script";
   color: #3d1319;
   font-size: 3rem;
@@ -187,10 +190,9 @@ body {
   background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-size: 1.2rem;
 }
-.menu--chic p:nth-of-type(2) {
+.menu--chic h3 {
   color: #c77412;
   font-family: "Vinegar";
   font-size: 2rem;
@@ -203,11 +205,10 @@ body {
   background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-family: "Dancing Script";
   font-size: 1.6rem;
 }
-.menu--delice p:nth-of-type(2) {
+.menu--delice h3 {
   color: #0887fb;
   font-family: "Nanum Pen Script";
   font-size: 3rem;
@@ -220,15 +221,13 @@ body {
   background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-family: "Kaushan Script";
   font-size: 1.6rem;
 }
-.menu--palette p:nth-of-type(2) {
+.menu--palette h3 {
   background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-family: "Nanum Pen Script";
   font-size: 3rem;
 }
@@ -244,7 +243,6 @@ body {
   background: linear-gradient(to right, #f15d61, #f6916a);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .carte--note h2 {
   font-family: "Devonshire";
@@ -302,7 +300,6 @@ body {
   background: linear-gradient(135deg, #e38a12 30%, #9056ff 65%);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .carte--chic h3 {
   font-size: 1.2rem;
@@ -391,7 +388,6 @@ body {
   background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-family: "Dancing Script";
   margin: 3.1rem 0rem 3.1rem;
 }
@@ -449,7 +445,6 @@ body {
   background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-family: "Kaushan Script";
   margin: 3.1rem 0rem 3.1rem;
 }

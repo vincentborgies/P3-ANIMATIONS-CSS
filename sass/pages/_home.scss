@@ -2,30 +2,36 @@ a {
     text-decoration: none;
 }
 
-button {
+.button {
     border-radius: 10px;
     opacity: 1;
     transition: opacity 0.6s;
     height: 2.8rem;
     width: 16.6rem;
-    margin: 1.9rem 0rem 3.1rem 0rem;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 120px;
     background: $vertdeau;
     border: 0 none;
-    padding: 0.31rem 1.25rem 0.31rem 1.25rem;
+    padding: 0.31rem 0.31rem;
     color: $jaune;
     font-size: 1.3rem;
-    p {
-        margin: 0.25rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        p{
+            margin: 0;
+            margin-right: 5px;
+        }
         span {
             width: 0.38rem;
             height: 0.38rem;
-            margin: 0 0.125rem 0.25rem 0.2rem;
+            margin:0;
             border-radius: 50%;
             background-color: #fdcb46;
             display: inline-block;
             @include Dots;
         }
-    }
 }
 
 .content {
@@ -75,12 +81,13 @@ body {
             transform: scale(1.25);
             opacity: 0.5;
         }
-        p:nth-of-type(1) {
+        p {
             margin: 0;
         }
-        p:nth-of-type(2) {
+        h3 {
             margin-top: 1.25rem;
             margin-bottom: 0;
+            font-weight: 400;
         }
     }
 }
@@ -88,9 +95,6 @@ body {
     background: $note;
     .fas {
         @include note;
-    }
-    .note {
-        padding-top: -3rem;
     }
     i {
         font-size: 3rem;
@@ -100,7 +104,7 @@ body {
         font-size: 1.6rem;
         color: #3d1319;
     }
-    p:nth-of-type(2) {
+    h3 {
         font-family: "Nanum Pen Script";
         color: #3d1319;
         font-size: 3rem;
@@ -113,10 +117,9 @@ body {
         background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
         color: transparent;
         -webkit-background-clip: text;
-        background-clip: text;
         font-size: 1.2rem;
     }
-    p:nth-of-type(2) {
+    h3 {
         color: #c77412;
         font-family: "Vinegar";
         font-size: 2rem;
@@ -128,11 +131,10 @@ body {
         background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
         color: transparent;
         -webkit-background-clip: text;
-        background-clip: text;
         font-family: "Dancing Script";
         font-size: 1.6rem;
     }
-    p:nth-of-type(2) {
+    h3 {
         color: #0887fb;
         font-family: "Nanum Pen Script";
         font-size: 3rem;
@@ -144,15 +146,13 @@ body {
         background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
         color: transparent;
         -webkit-background-clip: text;
-        background-clip: text;
         font-family: "Kaushan Script";
         font-size: 1.6rem;
     }
-    p:nth-of-type(2) {
+    h3 {
         background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
         color: transparent;
         -webkit-background-clip: text;
-        background-clip: text;
         font-family: "Nanum Pen Script";
         font-size: 3rem;
     }
