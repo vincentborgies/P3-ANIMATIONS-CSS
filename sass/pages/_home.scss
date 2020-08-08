@@ -1,4 +1,3 @@
-
 a {
     text-decoration: none;
 }
@@ -15,9 +14,9 @@ button {
     padding: 0.31rem 1.25rem 0.31rem 1.25rem;
     color: $jaune;
     font-size: 1.3rem;
-    p{
+    p {
         margin: 0.25rem 0 0 0;
-        span{
+        span {
             width: 0.38rem;
             height: 0.38rem;
             margin: 0 0.125rem 0.25rem 0.2rem;
@@ -29,68 +28,75 @@ button {
     }
 }
 
-.content{
-    margin-top: 1.25rem;
-    margin-bottom: 4.4rem;
+.content {
+    margin: 1.25rem 4% 4.4rem 4%;
 }
 
-.les-menus{
+.les-menus {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin:auto;
+    margin: auto;
     width: 56.25rem;
-    @include mobile{
+    @include tablette {
+        width: 100%;
+    }
+    @include mobile {
         flex-direction: column;
         width: 100%;
     }
 }
-html,body{
-    font-family: 'Archivo';
-    padding:0;
+html,
+body {
+    font-family: "Archivo";
+    padding: 0;
     margin: 0;
     text-align: center;
     height: 100%;
 }
 
-.menu{
+.menu {
     @include carte;
     height: 30rem;
     width: 21.5rem;
     margin: 1.25rem;
+    @include tablette {
+        height: 405px;
+        width: 305px;
+    }
     @include mobile {
         height: 345px;
         width: 260px;
     }
-    .zoom{
+    .zoom {
         transition: all 0.5s;
         &:hover {
             transform: scale(1.25);
             opacity: 0.5;
         }
-        p:nth-of-type(1){
-            margin: 0
+        p:nth-of-type(1) {
+            margin: 0;
         }
-        p:nth-of-type(2){
+        p:nth-of-type(2) {
             margin-top: 1.25rem;
             margin-bottom: 0;
         }
     }
 }
-.menu--note{
+.menu--note {
     background: $note;
-    .fas{
+    .fas {
         @include note;
     }
-    .note{
+    .note {
         padding-top: -3rem;
     }
-    i{
+    i {
         font-size: 3rem;
     }
-    p:nth-of-type(1){
-        font-family: "Devonshire"; 
+    p:nth-of-type(1) {
+        font-family: "Devonshire";
         font-size: 1.6rem;
         color: #3d1319;
     }
@@ -100,9 +106,9 @@ html,body{
         font-size: 3rem;
     }
 }
-.menu--chic{
+.menu--chic {
     background: $chic;
-    p:nth-of-type(1){
+    p:nth-of-type(1) {
         font-family: "Croissant One";
         background: linear-gradient(135deg, #e38a12 0%, #9056ff 71%);
         color: transparent;
@@ -110,44 +116,44 @@ html,body{
         background-clip: text;
         font-size: 1.2rem;
     }
-    p:nth-of-type(2) {color: #c77412;
+    p:nth-of-type(2) {
+        color: #c77412;
         font-family: "Vinegar";
         font-size: 2rem;
     }
 }
-.menu--delice{
+.menu--delice {
     background: $delice;
-        p:nth-of-type(1){
-            background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            font-family: "Dancing Script";
-            font-size: 1.6rem;
-        }
-        p:nth-of-type(2){
-            color: #0887fb;
-            font-family: "Nanum Pen Script";
-            font-size: 3rem;
-        }
-}        
-.menu--palette{
-    background: $palette;
-        p:nth-of-type(1){
-            background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            font-family: "Kaushan Script";
-            font-size: 1.6rem;
-        }
-        p:nth-of-type(2){ 
-            background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            font-family: "Nanum Pen Script";
-            font-size: 3rem;
-        }
+    p:nth-of-type(1) {
+        background: linear-gradient(135deg, #0229dd 0%, #0e8cfb 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-family: "Dancing Script";
+        font-size: 1.6rem;
+    }
+    p:nth-of-type(2) {
+        color: #0887fb;
+        font-family: "Nanum Pen Script";
+        font-size: 3rem;
+    }
 }
-
+.menu--palette {
+    background: $palette;
+    p:nth-of-type(1) {
+        background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-family: "Kaushan Script";
+        font-size: 1.6rem;
+    }
+    p:nth-of-type(2) {
+        background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-family: "Nanum Pen Script";
+        font-size: 3rem;
+    }
+}

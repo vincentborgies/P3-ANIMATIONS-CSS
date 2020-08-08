@@ -1,51 +1,56 @@
-.content >h2 {
+.content > h2 {
     font-size: 2.5rem;
 }
 
-.carte{
+.carte {
     text-align: center;
     margin: auto;
     margin-bottom: 6.25rem;
     max-width: 43.75rem;
     @include carte;
-    @include mobile {
-        margin: 0 1.5rem 8rem;
-    }
-    .dessert{
+    .dessert {
         text-align: left;
-        @include mobile{
+        @include under700 {
             text-align: center;
         }
     }
-    .plat{
+    .plat {
         margin-bottom: 30px;
     }
-    .platprix{
+    .platprix {
         display: flex;
         justify-content: center;
         justify-content: space-between;
-        @include mobile{
+        @include under700 {
             flex-direction: column;
+            text-align: center;
+        }
+        .prix {
+            @include under700 {
+                margin-top: 0;
+            }
         }
     }
-    h2{
+    h2 {
         font-size: 3rem;
     }
-    .soustitre-menu{
-        display:block;
-        position:relative;
+    .soustitre-menu {
+        display: block;
+        position: relative;
         justify-content: space-between;
         line-height: 1.88rem;
         text-align: center;
         width: 100%;
         margin: 0;
         padding: 0;
-        .tiret{
+        .tiret {
             @include deco;
-            @include mobile{
-                width: 15%;
+            @include under700 {
+                width: 20%;
+            }
+            @include mobile {
+                width: 0;
             }
         }
     }
-
 }

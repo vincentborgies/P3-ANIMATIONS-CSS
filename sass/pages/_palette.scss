@@ -1,9 +1,9 @@
-.carte--palette{
+.carte--palette {
     background: $palette;
     padding: 3.1rem 2.5rem 6.25rem 2.5rem;
-    font-family:"Caveat";
+    font-family: "Caveat";
     font-weight: bold;
-    >h2{
+    > h2 {
         background: linear-gradient(135deg, #3e923a 0%, #beff7f 100%);
         color: transparent;
         -webkit-background-clip: text;
@@ -11,21 +11,23 @@
         font-family: "Kaushan Script";
         margin: 3.1rem 0rem 3.1rem;
     }
-    h3{
+    h3 {
         @include Under(black);
-        @include fontsize-card-h3
+        @include fontsize-card-h3;
     }
-    p{
-        @include fontsize-card-p
+    p {
+        @include fontsize-card-p;
     }
-    .entree, .plat, .dessert{
-        @include marginepd 
+    .entree,
+    .plat,
+    .dessert {
+        @include marginepd;
     }
-    .palette-gauche{
+    .palette-gauche {
         background: url("../img/LineL-palette.svg") $nrc;
         @include decoL;
     }
-    .palette-droit{
+    .palette-droit {
         background: url("../img/LineR-palette.svg") $nrc;
         @include decoR;
     }
