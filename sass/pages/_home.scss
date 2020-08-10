@@ -75,12 +75,12 @@ body {
         height: 345px;
         width: 260px;
     }
+    &:hover > .zoom {
+        transform: scale(1.25);
+        opacity: 0.5;
+    }
     .zoom {
         transition: all 0.5s;
-        &:hover {
-            transform: scale(1.25);
-            opacity: 0.5;
-        }
         p {
             margin: 0;
         }

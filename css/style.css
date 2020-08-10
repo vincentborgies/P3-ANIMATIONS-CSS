@@ -144,12 +144,12 @@ body {
     width: 260px;
   }
 }
-.menu .zoom {
-  transition: all 0.5s;
-}
-.menu .zoom:hover {
+.menu:hover > .zoom {
   transform: scale(1.25);
   opacity: 0.5;
+}
+.menu .zoom {
+  transition: all 0.5s;
 }
 .menu .zoom p {
   margin: 0;

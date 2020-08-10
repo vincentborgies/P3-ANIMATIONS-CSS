@@ -34,7 +34,6 @@
 }
 
 @mixin scale {
-    transform: scale(1);
     transition-property: transform;
     &:hover {
         transform: scale(1.15);
@@ -48,7 +47,7 @@
 @mixin Under($color: $textnote) {
     display: inline-block;
     padding-bottom: 3px;
-    background: linear-gradient(to top, $color 0%, $color 2px, transparent 1px) no-repeat;
+    background:linear-gradient(to top, $color 0%, $color 2px, transparent 1px) no-repeat;
     background-size: 0 100%;
     transition: background-size 0.6s ease-in-out;
     &:hover {
