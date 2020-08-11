@@ -54,7 +54,7 @@ a {
   width: 16.6rem;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 240px;
+  margin-bottom: 30px;
   background: #579c87;
   border: 0 none;
   padding: 0.31rem 0.31rem;
@@ -91,7 +91,7 @@ a {
 }
 
 .content {
-  margin: 1.25rem 4% 4.4rem 4%;
+  margin: 20px 4% 200px 4%;
 }
 
 .les-menus {
